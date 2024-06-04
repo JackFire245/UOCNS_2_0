@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<TaskOCNS Description="ArbitraryTopology-(6)">
+  <Network>
+    <Netlist>
+-1 -1 2 
+2 -1 -1 
+0 4 1 
+4 -1 5 
+5 2 3 
+3 -1 4 
+</Netlist>
+    <Routing>
+3 2 2 2 2 2 
+0 3 0 0 0 0 
+0 2 3 1 1 1 
+0 0 0 3 0 2 
+1 1 1 2 3 0 
+2 2 2 0 2 3 
+</Routing>
+    <Link>
+      <Parameter FifoSize="4"/>
+      <Parameter FifoCount="4"/>
+    </Link>
+  </Network>
+  <Traffic>
+    <Parameter FlitSize="32"/>
+    <Parameter PacketSizeAvg="15"/>
+    <Parameter PacketSizeIsFixed="true"/>
+    <Parameter PacketPeriodAvg="1"/>
+  </Traffic>
+  <Simulation>
+    <Parameter CountRun="2"/>
+    <Parameter CountPacketRx="100"/>
+    <Parameter CountPacketRxWarmUp="1"/>
+    <Parameter IsModeGALS="false"/>
+  </Simulation>
+  <Coords_X>
+595 1747 583 1545 827 1659 
+</Coords_X>
+  <Coords_Y>
+450 44 239 146 280 328 
+</Coords_Y>
+  <Links>
+2 _
+2 _
+0 1 4 _
+4 5 _
+2 3 5 _
+3 4 _
+</Links>
+</TaskOCNS>
